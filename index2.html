@@ -1,0 +1,131 @@
+<html>
+
+<head>
+  <title>Products</title>
+  <link rel="icon" href="logo2.png" type="image/icon type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Secular+One&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  
+<h1>Here are our fresh farm products...</h1>
+<br>
+
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block1 pro1">
+<img class="img-responsive" id="im1" src="https://lh3.googleusercontent.com/-ttiuVo1nl3o/YHhEcAvVdFI/AAAAAAAAC_0/gNsUOSWKF8UywshJEvoiu6C6anoChAyKgCK8BGAsYHg/s0/Jackfruit%2Bbulbs.png?authuser=0">
+<h4>Jackfruit</h4>
+<select id="qty" name="qty">
+<option value="1kg">1kg</option>
+<option value="500g">500g</option>
+<option value="250g">250g</option>
+<option value="100g">100g</option>
+</select><br><br>
+<button class=" b1" onclick="add1">Add</button>
+</div><br><br>
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block1 pro2">
+<img class="img-responsive"id="im2" src="https://lh3.googleusercontent.com/-Fl-vovwGaoE/YHhEWd20u5I/AAAAAAAAC_o/f7QSkxQxNtMV1xPhmxEOFopAScswHt5QACK8BGAsYHg/s0/Chakka%2Bvaratti%2Bsample%2Bpic.png?authuser=0">
+<h4>Jackfruit Mithai</h4>
+<select id="qty" name="qty">
+<option value="1kg">1kg</option>
+<option value="500g">500g</option>
+<option value="250g">250g</option>
+<option value="100g">100g</option>
+</select><br><br>
+<button class=" b2" onclick="add2">Add</button>
+</div><br>
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block1 pro3">
+<img class="img-responsive" id="im3" src="https://lh3.googleusercontent.com/-87suKW3U8xg/YJ4Y5zw8gAI/AAAAAAAADDE/nFKiFPT4jWoOWzJcWPaJ01okDLqMMBiOACK8BGAsYHg/s0/2021-05-13.png?authuser=0">
+<h4>Coldpressed Coconut Oil</h4>
+<select id="qty" name="qty">
+<option value="1l">1 litre</option>
+<option value="500ml">500 ml</option>
+<option value="250ml">250 ml</option>
+<option value="100ml">100 ml</option>
+</select><br><br>
+<button class=" b3" onclick="add3">Add</button>
+</div><br><br><br><br></div>
+
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block2 pro4">
+<img class="img-responsive" id="im4" src="https://lh3.googleusercontent.com/-FjWo413jNlU/YJ4afVX85WI/AAAAAAAADDQ/ll8z4iGzPYw-IG10wOF4DSBieUoJ8QRygCK8BGAsYHg/s0/2021-05-13.png?authuser=0">
+<h4>Coconut Barfi</h4>
+<select id="qty" name="qty">
+<option value="2kg">2kg</option>
+<option value="1kg">1kg</option>
+<option value="250g">250g</option>
+</select><br><br>
+<button class=" b4" onclick="add4">Add</button>
+</div><br><br>
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block2 pro5">
+<img class="img-responsive" id="im5" src="https://lh3.googleusercontent.com/-7P1NoDagxv8/YJ4a8f9CrMI/AAAAAAAADDY/LEb7MBmIn2QirYazHlZAPNqwzAC_mQJ5wCK8BGAsYHg/s0/2021-05-13.png?authuser=0">
+<h4>Mango   <select id="mango" name="mango">
+<option value="Alphonso">Alphonso</option>
+<option value="Banganpalli">Banganpalli</option>
+<option value="Sindhooram">Sindhooram</option>
+<option value="Kilimooku">Kilimooku</option>
+</select></h4>
+<select id="qty" name="qty">
+<option value="2kg">2kg</option>
+<option value="1kg">1kg</option>
+</select><br><br>
+<button class=" b5" onclick="add5">Add</button>
+</div><br><br>
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block2 pro6">
+<img class="img-responsive" id="im6" src="https://www.mingara.com.au/wp-content/uploads/2018/05/Coconuts-on-a-board-SLIDER.jpg">
+<h4>Coconut</h4>
+<select id="qty" name="qty">
+<option value="Large">Large</option>
+<option value="Medium">Medium</option>
+<option value="Small">Small</option>
+</select><br><br>
+<button class=" b6" onclick="add6">Add</button>
+</div><br><br><br><br>
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block3 pro7">
+<img class="img-responsive" id="im7" src="https://lh3.googleusercontent.com/-M2L8KjyXuag/YJ4dgrIqdnI/AAAAAAAADDk/U3jAaX-8fycOqpIzxtyzzPrtqUbwR0goACK8BGAsYHg/s0/2021-05-13.png?authuser=0">
+<h4>Mango Varatti/Jam/Sweet</h4>
+<select id="qty" name="qty">
+<option value="1kg">1kg</option>
+<option value="750g">750g</option>
+<option value="500g">500g</option>
+</select><br><br>
+<button class=" b7" onclick="add7">Add</button>
+</div><br><br>
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block3 pro8">
+<img class="img-responsive" id="im8" src="https://lh3.googleusercontent.com/-hscalX7KGT0/YJ4eSWTwg-I/AAAAAAAADDs/bLs9gjj4p7gO6s2irMc3m6YthuGcBYIVQCK8BGAsYHg/s0/2021-05-13.png?authuser=0">
+<h4>Sapota</h4>
+<select id="qty" name="qty">
+<option value="2kg">2kg</option>
+<option value="1kg">1kg</option>
+<option value="500g">500g</option>
+</select><br><br>
+<button class=" b8" onclick="add8">Add</button>
+</div><br><br>
+
+<div class="list-group-item list-group-item-warning col-lg-4 col-md-4 col-sm-4 col-xs-12 block3 pro9">
+<img class="img-responsive" id="im9" src="https://images.news18.com/telugu/uploads/2021/04/white-guava-32ewe402384032-0348032ds804-34320480324.jpg">
+<h4>Guava</h4>
+<select id="qty" name="qty">
+<option value="2kg">2kg</option>
+<option value="1kg">1kg</option>
+</select><br><br>
+<button class=" b9" onclick="add9">Add</button>
+</div><br><br>
+
+<script src="main.js"></script>
+</body>
+</html>
